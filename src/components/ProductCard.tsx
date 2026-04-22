@@ -27,11 +27,10 @@ export function ProductCard({ name, price, image, category }: ProductCardProps) 
             className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
         </div>
-        {/* Hover overlay */}
         <div className="absolute inset-0 flex items-end bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100">
           <div className="w-full p-5">
             <button className="w-full rounded-full bg-foreground py-3 text-xs font-medium tracking-widest uppercase text-background transition-colors hover:bg-foreground/90">
-              Quick Add
+              Aperçu Rapide
             </button>
           </div>
         </div>

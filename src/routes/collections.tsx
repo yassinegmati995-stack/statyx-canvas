@@ -9,20 +9,20 @@ import joggersWhite from "@/assets/product-joggers-white.jpg";
 export const Route = createFileRoute("/collections")({
   head: () => ({
     meta: [
-      { title: "Shop Statyx — Collections" },
-      { name: "description", content: "Browse the full Statyx collection. Premium hoodies, joggers and streetwear featuring our iconic dove designs." },
-      { property: "og:title", content: "Shop Statyx — Collections" },
-      { property: "og:description", content: "Browse the full Statyx collection." },
+      { title: "Boutique Statyx — Collections" },
+      { name: "description", content: "Parcourez toute la collection Statyx. Hoodies premium, joggers et streetwear avec nos designs iconiques de colombe." },
+      { property: "og:title", content: "Boutique Statyx — Collections" },
+      { property: "og:description", content: "Parcourez toute la collection Statyx." },
     ],
   }),
   component: CollectionsPage,
 });
 
 const allProducts = [
-  { name: "Dove Hoodie — Noir", price: "€149", image: hoodieBlack, category: "Hoodies" },
-  { name: "Dove Hoodie — Blanc", price: "€149", image: hoodieWhite, category: "Hoodies" },
-  { name: "Flight Joggers — Noir", price: "€119", image: joggersBlack, category: "Joggers" },
-  { name: "Flight Joggers — Blanc", price: "€119", image: joggersWhite, category: "Joggers" },
+  { name: "Just Fly Hoodie — Blanc", price: "€149", image: hoodieWhite, category: "Hauts" },
+  { name: "Just Fly Hoodie — Noir", price: "€149", image: hoodieBlack, category: "Hauts" },
+  { name: "Dove Joggers — Blanc", price: "€119", image: joggersWhite, category: "Bas" },
+  { name: "Dove Joggers — Noir", price: "€119", image: joggersBlack, category: "Bas" },
 ];
 
 function CollectionsPage() {
@@ -36,7 +36,7 @@ function CollectionsPage() {
           className="mb-16 text-center"
         >
           <p className="mb-3 text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground">
-            All Products
+            Tous les Produits
           </p>
           <h1 className="font-heading text-6xl tracking-wide text-foreground sm:text-7xl">
             Collections

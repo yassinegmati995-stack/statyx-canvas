@@ -8,10 +8,10 @@ import { NewsletterSection } from "@/components/NewsletterSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Statyx — Premium Streetwear | Just Fly" },
-      { name: "description", content: "Where streetwear meets art. Premium apparel featuring iconic dove designs, handcrafted in Europe. Discover the Statyx collection." },
-      { property: "og:title", content: "Statyx — Premium Streetwear | Just Fly" },
-      { property: "og:description", content: "Where streetwear meets art. Premium apparel featuring iconic dove designs." },
+      { title: "Statyx — Streetwear Premium | Just Fly" },
+      { name: "description", content: "Là où le streetwear rencontre l'art. Vêtements premium avec des designs iconiques de colombe, fabriqués en Europe. Découvrez la collection Statyx." },
+      { property: "og:title", content: "Statyx — Streetwear Premium | Just Fly" },
+      { property: "og:description", content: "Là où le streetwear rencontre l'art. Vêtements premium avec des designs iconiques de colombe." },
       { property: "og:type", content: "website" },
     ],
   }),

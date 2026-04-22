@@ -3,19 +3,19 @@ import collectionImage from "@/assets/statyx-collection.png";
 
 const testimonials = [
   {
-    quote: "Statyx isn't just clothing — it's a statement. The quality and artistry are unmatched.",
+    quote: "Statyx ce n'est pas juste des vêtements — c'est une déclaration. La qualité et l'art sont inégalés.",
     name: "Alex R.",
-    role: "Creative Director",
+    role: "Directeur Créatif",
   },
   {
-    quote: "I've never received so many compliments on a hoodie. The dove print is breathtaking up close.",
+    quote: "Je n'ai jamais reçu autant de compliments pour un hoodie. L'impression de la colombe est magnifique de près.",
     name: "Sarah M.",
-    role: "Fashion Blogger",
+    role: "Blogueuse Mode",
   },
   {
-    quote: "Finally, streetwear that feels premium. The attention to detail is incredible.",
+    quote: "Enfin du streetwear qui fait premium. L'attention aux détails est incroyable.",
     name: "Marcus T.",
-    role: "Photographer",
+    role: "Photographe",
   },
 ];
 
@@ -24,7 +24,6 @@ export function TestimonialsSection() {
     <section className="relative py-32">
       <div className="grain absolute inset-0" />
       <div className="relative z-10 mx-auto max-w-7xl px-6">
-        {/* Lookbook banner */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +34,7 @@ export function TestimonialsSection() {
           <div className="relative">
             <img
               src={collectionImage}
-              alt="Statyx Just Fly collection — hoodies and joggers in black and white"
+              alt="Collection Statyx Just Fly — hoodies et joggers en noir et blanc"
               loading="lazy"
               width={1200}
               height={600}
@@ -44,7 +43,7 @@ export function TestimonialsSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-8 text-center sm:p-12">
               <p className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground">
-                SS26 Collection
+                Collection ÉTÉ 26
               </p>
               <h2 className="mt-2 font-heading text-4xl tracking-wide text-foreground sm:text-5xl">
                 Just Fly
@@ -53,19 +52,18 @@ export function TestimonialsSection() {
                 href="#collections"
                 className="mt-6 inline-flex h-11 items-center justify-center rounded-full bg-foreground px-8 text-xs font-medium tracking-widest uppercase text-background transition-colors hover:bg-foreground/90"
               >
-                Shop the Collection
+                Voir la Collection
               </a>
             </div>
           </div>
         </motion.div>
 
-        {/* Testimonials */}
         <div className="mb-16 text-center">
           <p className="mb-3 text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground">
-            Community
+            Communauté
           </p>
           <h2 className="font-heading text-5xl tracking-wide text-foreground">
-            Voices
+            Témoignages
           </h2>
         </div>
 
