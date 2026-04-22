@@ -30,8 +30,8 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Statyx — Premium Streetwear" },
-      { name: "description", content: "Where streetwear meets art. Premium apparel by Statyx." },
+      { title: "Statyx — Streetwear Premium" },
+      { name: "description", content: "Là où le streetwear rencontre l'art. Vêtements premium par Statyx." },
       { name: "author", content: "Statyx" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

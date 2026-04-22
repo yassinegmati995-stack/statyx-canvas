@@ -3,9 +3,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/collections", label: "Shop" },
-  { to: "/about", label: "About" },
+  { to: "/", label: "Accueil" },
+  { to: "/collections", label: "Boutique" },
+  { to: "/about", label: "À Propos" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -15,12 +15,10 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        {/* Logo */}
         <Link to="/" className="font-heading text-2xl tracking-wide text-foreground">
           Statyx
         </Link>
 
-        {/* Desktop nav */}
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <Link
@@ -34,11 +32,9 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Right icons */}
         <div className="flex items-center gap-4">
-          {/* Cart icon */}
           <button
-            aria-label="Cart"
+            aria-label="Panier"
             className="relative text-muted-foreground transition-colors hover:text-foreground"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -51,7 +47,6 @@ export function Header() {
             </span>
           </button>
 
-          {/* Mobile menu button */}
           <button
             aria-label="Menu"
             className="text-muted-foreground md:hidden"
@@ -74,7 +69,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.nav

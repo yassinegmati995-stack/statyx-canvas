@@ -5,10 +5,10 @@ import lookbook from "@/assets/lookbook-1.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Statyx — Our Story" },
-      { name: "description", content: "Born from urban culture and the spirit of freedom, Statyx creates premium streetwear that merges gothic artistry with modern design." },
-      { property: "og:title", content: "About Statyx — Our Story" },
-      { property: "og:description", content: "Born from urban culture and the spirit of freedom." },
+      { title: "À Propos de Statyx — Notre Histoire" },
+      { name: "description", content: "Née de la culture urbaine et de l'esprit de liberté, Statyx crée du streetwear premium alliant art gothique et design moderne." },
+      { property: "og:title", content: "À Propos de Statyx — Notre Histoire" },
+      { property: "og:description", content: "Née de la culture urbaine et de l'esprit de liberté." },
     ],
   }),
   component: AboutPage,
@@ -17,10 +17,9 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <main className="pt-16">
-      {/* Hero */}
       <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={lookbook} alt="Statyx editorial" className="h-full w-full object-cover" width={1200} height={800} />
+          <img src={lookbook} alt="Éditorial Statyx" className="h-full w-full object-cover" width={1200} height={800} />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
         </div>
         <div className="grain absolute inset-0" />
@@ -31,7 +30,7 @@ function AboutPage() {
             transition={{ duration: 0.8 }}
             className="font-heading text-6xl tracking-wide text-foreground sm:text-7xl"
           >
-            Our Story
+            Notre Histoire
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -39,26 +38,25 @@ function AboutPage() {
             transition={{ delay: 0.3 }}
             className="mt-4 text-sm text-muted-foreground"
           >
-            Freedom. Art. Identity.
+            Liberté. Art. Identité.
           </motion.p>
         </div>
       </section>
 
-      {/* Content */}
       <section className="mx-auto max-w-3xl px-6 py-24">
         <div className="space-y-8 text-sm leading-loose text-muted-foreground">
           <p>
-            Statyx was born from the streets — a creative expression rooted in the raw energy of urban culture. 
-            We believe clothing should do more than cover; it should communicate who you are before you speak a word.
+            Statyx est né des rues — une expression créative enracinée dans l'énergie brute de la culture urbaine. 
+            Nous croyons que le vêtement doit faire plus que couvrir ; il doit communiquer qui vous êtes avant même que vous ne prononciez un mot.
           </p>
           <p>
-            The dove is our emblem. It represents the freedom to rise above, to move differently, to fly. 
-            Every stitch, every print, every silhouette is designed with intention — blending gothic artistry 
-            with the clean lines of modern streetwear.
+            La colombe est notre emblème. Elle représente la liberté de s'élever, de se démarquer, de voler. 
+            Chaque couture, chaque impression, chaque silhouette est conçue avec intention — alliant l'art gothique 
+            aux lignes épurées du streetwear moderne.
           </p>
           <p>
-            Our collections are produced in limited runs using premium European materials. 
-            We don't chase trends. We create timeless pieces that become part of your identity.
+            Nos collections sont produites en séries limitées avec des matériaux européens premium. 
+            Nous ne suivons pas les tendances. Nous créons des pièces intemporelles qui deviennent partie de votre identité.
           </p>
           <p className="font-heading text-2xl text-foreground">
             Just Fly.
